@@ -67,23 +67,14 @@ function App() {
           <h2>Publications</h2>
           <div className="publication-list">
             {publications.map((pub, index) => (
-              <div key={index} className="publication-container">
-                <div className="publication-item">
-                  <h3 className="pub-title">{pub.title}</h3>
-                  <p className="pub-authors">{highlightAuthor(pub.authors)}</p>
-                  <p className="pub-conf">{pub.conference}</p>
-                  <div className="pub-links">
-                    {Object.entries(pub.links).map(([key, url]) => (
-                      <a key={key} href={url} className="link-tag">{key}</a>
-                    ))}
-                  </div>
-                </div>
-                <div className="pub-image-container">
-                  {pub.image ? (
-                    <img src={pub.image} alt={pub.title} className="pub-image" />
-                  ) : (
-                    <div className="pub-image-placeholder"></div>
-                  )}
+              <div key={index} className="publication-item">
+                <h3 className="pub-title">{pub.title}</h3>
+                <p className="pub-authors">{highlightAuthor(pub.authors)}</p>
+                <p className="pub-conf">{pub.conference}</p>
+                <div className="pub-links">
+                  {Object.entries(pub.links).map(([key, url]) => (
+                    <a key={key} href={url} className="link-tag">{key}</a>
+                  ))}
                 </div>
               </div>
             ))}

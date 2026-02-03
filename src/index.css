@@ -148,28 +148,8 @@ h2 {
 }
 
 /* Publications */
-.publication-container {
-  margin-bottom: 2.5rem;
-  display: flex;
-  gap: 1.5rem;
-}
-
-.pub-image-container {
-  flex-shrink: 0;
-}
-
-.pub-image-placeholder,
-.pub-image {
-  width: 160px;
-  height: 100px;
-  background-color: #f0f0f0;
-  border-radius: 4px;
-  object-fit: cover;
-  border: 1px solid var(--border-color);
-}
-
 .publication-item {
-  flex: 1;
+  margin-bottom: 2rem;
 }
 
 .pub-title {
