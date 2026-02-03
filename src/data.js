@@ -25,18 +25,11 @@ export const publications = [
 
 export const projects = [
     {
-        title: "Technical Report: Large Scale Model Training",
-        description: "A comprehensive report on optimizing transformer training on distributed systems.",
+        title: "Nex-N1: Agentic Models Trained via a Unified Ecosystem for Large-Scale Environment Construction",
         links: {
-            report: "#",
-            code: "#"
-        }
-    },
-    {
-        title: "Industry Project: Intelligent Agent System",
-        description: "Developed a multi-agent system for automated workflow management in a large-scale enterprise environment.",
-        links: {
-            demo: "#"
+            report: "https://arxiv.org/abs/2512.04987",
+            code: "https://github.com/nex-agi/Nex-N1",
+            homepage: "https://nex.sii.edu.cn/"
         }
     }
 ];
