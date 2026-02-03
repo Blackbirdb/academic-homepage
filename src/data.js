@@ -6,7 +6,7 @@ export const bio = {
     github: "https://github.com/Blackbirdb",
     scholar: "https://scholar.google.com/citations?user=G80nNEkAAAAJ",
     // Avatar image: put the file in public/images/avatar.jpg
-    avatar: "images/avatar.jpg",
+    avatar: "images/avatar.jpeg",
     description: [
         "I am a PhD student at Fudan NLP Group, where I work on agents and RL for LLMs. I am advised by Prof. Tao Gui, Prof. Qi Zhang, and Prof. Xuanjing Huang. "
     ],
