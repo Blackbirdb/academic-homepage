@@ -23,7 +23,11 @@ function App() {
       <aside className="sidebar">
         <div className="profile-section">
           <div className="profile-limit">
-            <img src="https://via.placeholder.com/150" alt={bio.name} className="profile-photo" />
+            <img
+              src={bio.avatar ? bio.avatar : "https://via.placeholder.com/150"}
+              alt={bio.name}
+              className="profile-photo"
+            />
           </div>
           <h1>
             {bio.name.split("（")[0]}<br />
@@ -64,9 +68,6 @@ function App() {
           <div className="publication-list">
             {publications.map((pub, index) => (
               <div key={index} className="publication-container">
-                <div className="pub-image-placeholder">
-                  {/* Image placeholder */}
-                </div>
                 <div className="publication-item">
                   <h3 className="pub-title">{pub.title}</h3>
                   <p className="pub-authors">{highlightAuthor(pub.authors)}</p>
@@ -76,6 +77,13 @@ function App() {
                       <a key={key} href={url} className="link-tag">{key}</a>
                     ))}
                   </div>
+                </div>
+                <div className="pub-image-container">
+                  {pub.image ? (
+                    <img src={pub.image} alt={pub.title} className="pub-image" />
+                  ) : (
+                    <div className="pub-image-placeholder"></div>
+                  )}
                 </div>
               </div>
             ))}
