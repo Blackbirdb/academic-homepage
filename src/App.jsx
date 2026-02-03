@@ -25,7 +25,12 @@ function App() {
           <div className="profile-limit">
             <img src="https://via.placeholder.com/150" alt={bio.name} className="profile-photo" />
           </div>
-          <h1>{bio.name}</h1>
+          <h1>
+            {bio.name.split("（")[0]}<br />
+            <span style={{ fontSize: '0.8em', fontWeight: 'normal' }}>
+              {bio.name.includes("（") ? `（${bio.name.split("（")[1]}` : ""}
+            </span>
+          </h1>
           <p className="role">{bio.role}</p>
           <p className="department">{bio.department}</p>
           <p className="university">{bio.university}</p>
@@ -58,14 +63,19 @@ function App() {
           <h2>Publications</h2>
           <div className="publication-list">
             {publications.map((pub, index) => (
-              <div key={index} className="publication-item">
-                <h3 className="pub-title">{pub.title}</h3>
-                <p className="pub-authors">{highlightAuthor(pub.authors)}</p>
-                <p className="pub-conf">{pub.conference}</p>
-                <div className="pub-links">
-                  {Object.entries(pub.links).map(([key, url]) => (
-                    <a key={key} href={url} className="link-tag">{key}</a>
-                  ))}
+              <div key={index} className="publication-container">
+                <div className="pub-image-placeholder">
+                  {/* Image placeholder */}
+                </div>
+                <div className="publication-item">
+                  <h3 className="pub-title">{pub.title}</h3>
+                  <p className="pub-authors">{highlightAuthor(pub.authors)}</p>
+                  <p className="pub-conf">{pub.conference}</p>
+                  <div className="pub-links">
+                    {Object.entries(pub.links).map(([key, url]) => (
+                      <a key={key} href={url} className="link-tag">{key}</a>
+                    ))}
+                  </div>
                 </div>
               </div>
             ))}
