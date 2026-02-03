@@ -1,7 +1,23 @@
 import { useState } from 'react';
-import { bio, publications, news } from './data';
+import { bio, publications, projects } from './data';
 
 function App() {
+  const highlightAuthor = (authors) => {
+    const myName = "Baodai Huang";
+    if (!authors.includes(myName)) return authors;
+    const parts = authors.split(myName);
+    return (
+      <>
+        {parts.map((part, i) => (
+          <span key={i}>
+            {part}
+            {i !== parts.length - 1 && <strong style={{ color: '#000' }}>{myName}</strong>}
+          </span>
+        ))}
+      </>
+    );
+  };
+
   return (
     <div className="container">
       <aside className="sidebar">
@@ -36,17 +52,7 @@ function App() {
           ))}
         </section>
 
-        <section id="news">
-          <h2>News</h2>
-          <ul className="news-list">
-            {news.map((item, index) => (
-              <li key={index}>
-                <span className="date">{item.date}</span>
-                <span className="news-content">{item.content}</span>
-              </li>
-            ))}
-          </ul>
-        </section>
+
 
         <section id="publications">
           <h2>Publications</h2>
@@ -54,10 +60,27 @@ function App() {
             {publications.map((pub, index) => (
               <div key={index} className="publication-item">
                 <h3 className="pub-title">{pub.title}</h3>
-                <p className="pub-authors">{pub.authors}</p>
+                <p className="pub-authors">{highlightAuthor(pub.authors)}</p>
                 <p className="pub-conf">{pub.conference}</p>
                 <div className="pub-links">
                   {Object.entries(pub.links).map(([key, url]) => (
+                    <a key={key} href={url} className="link-tag">{key}</a>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <section id="projects">
+          <h2>Projects</h2>
+          <div className="publication-list">
+            {projects.map((proj, index) => (
+              <div key={index} className="publication-item">
+                <h3 className="pub-title">{proj.title}</h3>
+                <p className="pub-authors">{proj.description}</p>
+                <div className="pub-links">
+                  {Object.entries(proj.links).map(([key, url]) => (
                     <a key={key} href={url} className="link-tag">{key}</a>
                   ))}
                 </div>

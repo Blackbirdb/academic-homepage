@@ -4,36 +4,39 @@ export const bio = {
     university: "Fudan University & SII",
     email: "bdhuang22@m.fudan.edu.cn",
     github: "https://github.com/Blackbirdb",
-    scholar: "https://scholar.google.com/citations?user=yourid",
+    scholar: "https://scholar.google.com/citations?user=G80nNEkAAAAJ",
     description: [
-        "I am a Ph.D. candidate at the University of Science and Technology, advised by Prof. Advisor Name.",
-        "My research interests lie in Computer Vision, Machine Learning, and Robotics. I am particularly interested in efficient learning methods and their applications in real-world scenarios.",
+        "I am a PhD student at Fudan NLP Group, where I work on agents and RL for LLMs. I am advised by Prof. Tao Gui, Prof. Qi Zhang, and Prof. Xuanjing Huang. "
     ],
 };
 
 export const publications = [
     {
-        title: "Paper Title 1: An Amazing Discovery in Computer Science",
-        authors: "Your Name, A. Collaborator, B. Advisor",
-        conference: "CVPR 2024",
+        title: "AgentGym-RL: Training LLM Agents for Long-Horizon Decision Making through Multi-Turn Reinforcement Learning",
+        authors: "Zhiheng Xi, Jixuan Huang, Chenyang Liao, Baodai Huang, Honglin Guo, Jiaqi Liu, Rui Zheng, Junjie Ye, Jiazheng Zhang, Wenxiang Chen, Wei He, Yiwen Ding, Guanyu Li, Zehui Chen, Zhengyin Du, Xuesong Yao, Yufei Xu, Jiecao Chen, Tao Gui, Zuxuan Wu, Qi Zhang, Xuanjing Huang, Yu-Gang Jiang",
+        conference: "ICLR 2026",
         links: {
-            pdf: "#",
-            code: "#",
-            project: "#",
+            pdf: "https://arxiv.org/abs/2509.08755",
+            code: "https://github.com/woooodyy/AgentGym-RL",
+            project: "https://agentgym-rl.github.io/",
         },
-    },
-    {
-        title: "Paper Title 2: Another Groundbreaking Research",
-        authors: "C. Colleague, Your Name, B. Advisor",
-        conference: "ICLR 2023 (Oral)",
-        links: {
-            pdf: "#",
-            code: "#",
-        },
-    },
+    }
 ];
 
-export const news = [
-    { date: "May 2024", content: "One paper accepted to CVPR 2024!" },
-    { date: "Sep 2023", content: "Started my internship at Tech Company X." },
+export const projects = [
+    {
+        title: "Technical Report: Large Scale Model Training",
+        description: "A comprehensive report on optimizing transformer training on distributed systems.",
+        links: {
+            report: "#",
+            code: "#"
+        }
+    },
+    {
+        title: "Industry Project: Intelligent Agent System",
+        description: "Developed a multi-agent system for automated workflow management in a large-scale enterprise environment.",
+        links: {
+            demo: "#"
+        }
+    }
 ];
