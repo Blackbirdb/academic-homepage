@@ -1,10 +1,9 @@
 export const bio = {
-    name: "Your Name",
-    role: "Ph.D. Candidate",
-    department: "Department of Computer Science",
-    university: "University of Science and Technology",
-    email: "your.email@university.edu",
-    github: "https://github.com/yourusername",
+    name: "Baodai Huang（黄宝岱）",
+    role: "Ph.D. Student",
+    university: "Fudan University & SII",
+    email: "bdhuang22@m.fudan.edu.cn",
+    github: "https://github.com/Blackbirdb",
     scholar: "https://scholar.google.com/citations?user=yourid",
     description: [
         "I am a Ph.D. candidate at the University of Science and Technology, advised by Prof. Advisor Name.",
