@@ -6,7 +6,7 @@ export const bio = {
     github: "https://github.com/Blackbirdb",
     scholar: "https://scholar.google.com/citations?user=G80nNEkAAAAJ",
     // Avatar image: put the file in public/images/avatar.jpg
-    avatar: "",
+    avatar: "images/avatar.jpg",
     description: [
         "I am a PhD student at Fudan NLP Group, where I work on agents and RL for LLMs. I am advised by Prof. Tao Gui, Prof. Qi Zhang, and Prof. Xuanjing Huang. "
     ],
@@ -18,7 +18,7 @@ export const publications = [
         authors: "Zhiheng Xi, Jixuan Huang, Chenyang Liao, Baodai Huang, Honglin Guo, Jiaqi Liu, Rui Zheng, Junjie Ye, Jiazheng Zhang, Wenxiang Chen, Wei He, Yiwen Ding, Guanyu Li, Zehui Chen, Zhengyin Du, Xuesong Yao, Yufei Xu, Jiecao Chen, Tao Gui, Zuxuan Wu, Qi Zhang, Xuanjing Huang, Yu-Gang Jiang",
         conference: "ICLR 2026",
         // Publication image: put the file in public/images/agentgym.png
-        image: "",
+        image: "images/agentgym_rl.png",
         links: {
             pdf: "https://arxiv.org/abs/2509.08755",
             code: "https://github.com/woooodyy/AgentGym-RL",
