@@ -30,7 +30,6 @@ export const publications = [
 export const projects = [
     {
         title: "Nex-N1: Agentic Models Trained via a Unified Ecosystem for Large-Scale Environment Construction",
-        description: "A comprehensive report on optimizing transformer training on distributed systems.",
         links: {
             report: "https://arxiv.org/abs/2512.04987",
             code: "https://github.com/nex-agi/Nex-N1",
